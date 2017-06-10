@@ -13,6 +13,7 @@
  *    3. Basic Layout
  *    4. Header
  *    5. Content
+ *          - about
  *    6. Footer
  *    7. Etc
  *
@@ -37,6 +38,11 @@ a {
 a:focus, a:hover {
     color: #ffd24d;
     text-decoration: underline;
+}
+
+.dbrow {
+    margin-right: -30px;
+    margin-left: -30px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -104,6 +110,54 @@ a:focus, a:hover {
 }
 
 
+
+.pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: 2px;
+    line-height: 1.42857143;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 35px;
+}
+
+.pagination>li:first-child>a, .pagination>li:first-child>span,
+.pagination>li:last-child>a, .pagination>li:last-child>span {
+    border-radius: 30px;
+}
+
+.pagination>.active>a, 
+.pagination>.active>a:focus, 
+.pagination>.active>a:hover, 
+.pagination>.active>span, 
+.pagination>.active>span:focus, 
+.pagination>.active>span:hover {
+    z-index: 3;
+    color: #000;
+    cursor: default;
+    background-color: #ffffff;
+    border-color: #000000;
+}
+
+.pagination>li>a:focus, 
+.pagination>li>a:hover, 
+.pagination>li>span:focus, 
+.pagination>li>span:hover {
+    z-index: 2;
+    color: #000000;
+    background-color: #fff;
+    border-color: #000;
+}
+
+.list-inline>li {
+    display: inline-block;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
 /*
 * === Basic Elements ===
 */
@@ -120,12 +174,34 @@ a:focus, a:hover {
     padding-bottom: 8px;
 
     &-story {
-        font-size: 45px;
+        font-size: 43px;
         font-weight: 600;
     }
 
     &-basic {
         margin-top: 0;
+    }
+
+
+    &-about {
+        background: #000;
+        color: #FFF;
+        font-size: 43px;
+        font-weight: 600;
+        padding: 15px 0;
+        text-align: center;
+        position: relative;
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: -1;
+            left: 0px;
+            right: 0px;
+            bottom: -12px;
+            border-bottom: 8px solid #000;
+        }
     }
 
 }
@@ -143,7 +219,7 @@ a:focus, a:hover {
 
 .mess-story {
     margin-top: 20px;
-    font-size: 35px;
+    font-size: 33px;
 
 
     &>.wp-story {
@@ -279,7 +355,7 @@ a.wp-review {
     right: -98px;
     top: 45%;
     z-index: 100;
-    transition: 1s;
+    transition: 0.5s;
 
     & img {
         height: 40px;
@@ -342,6 +418,12 @@ input.search {
     border-radius: 25px;
     color: #FFF;
     font-size: 16px;
+}
+
+.btn-addcart {
+    background: #666;
+    color: #FFF;
+    font-size: 20px;
 }
 
 
@@ -442,6 +524,81 @@ nav.navbar-default {
 
 
 
+
+
+// About
+.content_about {
+    font-size: 25px;
+    padding: 25px 60px;
+}
+
+
+// New Arrival
+.thumbnail_arrival {
+    padding: 15px;
+    margin-bottom: 5px;
+    border: 0;
+
+    &>a:hover {
+        text-decoration: none;
+    }
+}
+
+.price {
+    color: #bb0000;
+    font-size: 22px;
+}
+
+
+// Product Detail
+.product_detail {
+    font-size: 22px;
+
+    & ul.pro_detail {
+        list-style-type: none;
+        padding: 0;
+        margin: 40px 0;
+    }
+}
+
+span.color-circle {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 33px;
+    border: 1px solid #c5c5c5;
+}
+
+ul.pro_color {
+    margin-left: 25px;
+}
+
+// Shopping cart
+.styled-select {
+   background: url('../../images/icon-select.jpg') no-repeat 100% 0;
+   height: 50px;
+   overflow: hidden;
+   width: 240px;
+   display: inline-block;
+}
+
+.styled-select select {
+    background: transparent;
+    width: 235px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 50px;
+    -webkit-appearance: none;
+    border: 1px solid #404040;
+}
+
+
+
+
+
 /*
 * === Footer ===
 */
@@ -498,13 +655,13 @@ footer {
     }
 }
 
-@media (min-width: 1650px) {
+@media (min-width: 1380px) {
     .container {
-        width: 1600px;
+        width: 1366px;
     }
     .navbar-default .navbar-nav>li>a {
         color: #fff;
-        padding: 15px 80px;
+        padding: 15px 68px;
         transition: all 0.5s ease;
     }
 }
@@ -574,6 +731,15 @@ footer {
 @media (max-width: 710px) {
     footer {
         text-align: center;
+    }
+
+    .content_about {
+        font-size: 20px;
+        padding: 25px 15px;
+    }
+    .dbrow {
+        margin-right: -15px;
+        margin-left: -15px;
     }
 }
 
