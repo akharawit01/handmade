@@ -18,39 +18,103 @@ include 'component/component.php';
     <?php compo_header(); ?>
 
     <div class="container">
-        <h1 class="text-center">
+        <h1 class="title-cart text-center">
             Shopping cart
         </h1>
 
         <div class="row">
             <div class="col-md-8">
-                <div class="box-border">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="images/slide.jpg" class="img-responsive" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <ul>
-                                <li>Product name: xxxxxx</li>
-                                <li>Price: $300</li>
-                                <li>Color: White</li>
-                                <li>Size: 30x30</li>
-                            </ul>
-                            <a class="btn btn-default" href="#" role="button">Link</a>
-                            <div class="styled-select slate">
-                              <select>
-                                <option>Here is the first option</option>
-                                <option>The second option</option>
-                                <option>The third option</option>
-                              </select>
+                <ul class="list-cart_pro">
+                    <li class="box-border">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/slide.jpg" class="img-responsive" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <ul class="shopping-pro_detail">
+                                    <li>Product name: <span>xxxxxx</span></li>
+                                    <li>Price: <span class="price">$300</span></li>
+                                    <li>Color: <span>White</span></li>
+                                    <li>Size: <span>30x30</span></li>
+                                    <li>
+                                        <a href="#" class="btn-cart_delete">
+                                            <span class="glyphicon glyphicon-trash"></span> Delete
+                                        </a>
+                                        <div class="styled-select slate">
+                                            <select>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                    <li class="box-border">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/slide.jpg" class="img-responsive" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <ul class="shopping-pro_detail">
+                                    <li>Product name: <span>xxxxxx</span></li>
+                                    <li>Price: <span class="price">$300</span></li>
+                                    <li>Color: <span>White</span></li>
+                                    <li>Size: <span>30x30</span></li>
+                                    <li>
+                                        <a href="#" class="btn-cart_delete">
+                                            <span class="glyphicon glyphicon-trash"></span> Delete
+                                        </a>
+                                        <div class="styled-select slate">
+                                            <select>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <div class="col-md-4">
+                <h1 class="title-total_cart">Total</h1>
                 <div class="box-border">
-                    
+
+                    <table class="table table-cart_total">
+                        <tr>
+                            <td>Product name</td>
+                            <td>1</td>
+                            <td>$300</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>1</td>
+                            <td>$300</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-left">
+                                <!-- <div class="checkbox">
+                                    <label>
+                                        <img src="images/icon-checked.jpg" alt="" height="20"> ลงทะเบียน 40
+                                    </label>
+                                </div> -->
+                                <label>
+                                    <img src="images/icon-checked.jpg" alt="" height="18"> EMS ฟรี
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><strong>รวม</strong></td>
+                            <td><strong class="price">300</strong></td>
+                        </tr>
+                    </table>
+
+                    <div class="text-center"><button class="btn btn-default btn-handmade" type="submit">ยืนยัน</button></div>
                 </div>
             </div>
         </div>

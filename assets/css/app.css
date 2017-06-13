@@ -133,6 +133,28 @@ a:focus, a:hover {
   padding-right: 0px;
   padding-left: 0px; }
 
+.form-group > .form-control {
+  height: 45px;
+  border-radius: 0; }
+.form-group > label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 15px; }
+  .form-group > label.label-w600 {
+    font-weight: 600; }
+.form-group > .checkbox, .form-group > .radio {
+  font-size: 18px;
+  padding-left: 30px; }
+  .form-group > .checkbox > label, .form-group > .checkbox > label, .form-group > .radio > label, .form-group > .radio > label {
+    min-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 200;
+    cursor: pointer; }
+
 /*
 * === Basic Elements ===
 */
@@ -167,6 +189,27 @@ a:focus, a:hover {
       right: 0px;
       bottom: -12px;
       border-bottom: 8px solid #000; }
+  .title-cart {
+    padding-bottom: 30px;
+    font-weight: 600;
+    font-size: 45px; }
+  .title-total_cart {
+    background-color: #000;
+    margin: 0;
+    padding: 15px 10px;
+    text-align: right;
+    color: #FFF;
+    text-transform: uppercase;
+    position: relative; }
+    .title-total_cart:before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: -1;
+      left: 0px;
+      right: 0px;
+      bottom: -10px;
+      border-bottom: 5px solid #333; }
 
 .title:before {
   content: "";
@@ -177,6 +220,77 @@ a:focus, a:hover {
   right: 0px;
   bottom: -12px;
   border-bottom: 1px solid #333; }
+
+.table-cart_total {
+  margin-top: 20px;
+  font-size: 16px; }
+  .table-cart_total > tbody > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 0; }
+    .table-cart_total > tbody > tr > td:last-child {
+      text-align: right; }
+    .table-cart_total > tbody > tr > td.text-left {
+      text-align: left; }
+    .table-cart_total > tbody > tr > td > label {
+      font-weight: normal; }
+    .table-cart_total > tbody > tr > td > strong.price {
+      font-size: 16px; }
+.table-total_footer {
+  background: #cdcbcd;
+  color: #333;
+  font-size: 16px; }
+  .table-total_footer > tbody > tr > td {
+    padding: 8px 30px; }
+    .table-total_footer > tbody > tr > td:last-child {
+      text-align: right; }
+    .table-total_footer > tbody > tr > td > strong.price {
+      font-size: 16px; }
+
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  counter-reset: step;
+  padding: 0; }
+
+#progressbar li.active:before, #progressbar li.active:after {
+  background: #fecc35;
+  color: #FFF; }
+
+#progressbar li:first-child:after {
+  content: none; }
+
+#progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #cccacc;
+  position: absolute;
+  left: -50%;
+  top: 9px;
+  z-index: -1; }
+
+#progressbar li:before {
+  line-height: 20px;
+  display: block;
+  font-size: 12px;
+  color: #333;
+  border-radius: 3px;
+  margin: 0 auto 5px auto;
+  font-weight: bold; }
+
+#progressbar li {
+  list-style-type: none;
+  color: #333;
+  font-size: 16px;
+  width: 33.33%;
+  float: left;
+  position: relative;
+  text-align: center;
+  font-weight: bold; }
+  #progressbar li img {
+    margin-bottom: 15px; }
 
 .mess-story {
   margin-top: 20px;
@@ -318,6 +432,13 @@ a.wp-review {
   border: 1px solid #CCC;
   padding: 15px; }
 
+.list-cart_pro {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  .list-cart_pro > li {
+    margin-bottom: 15px; }
+
 /*
 * === Basic Layout ===
 */
@@ -355,6 +476,31 @@ input.search {
   background: #666;
   color: #FFF;
   font-size: 20px; }
+
+.btn-cart_delete {
+  color: #000;
+  background: #FFF;
+  padding: 14px;
+  font-size: 16px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 50px;
+  -webkit-appearance: none;
+  border: 1px solid #404040;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+  .btn-cart_delete:hover, .btn-cart_delete:focus {
+    color: #000;
+    text-decoration: none; }
+
+.btn-handmade {
+  color: #444;
+  background-color: #CCC;
+  border-color: #FFF;
+  padding: 15px 50px;
+  font-size: 16px; }
 
 header ul {
   list-style-type: none;
@@ -465,21 +611,55 @@ ul.pro_color {
 .styled-select {
   background: url("../../images/icon-select.jpg") no-repeat 100% 0;
   height: 50px;
-  overflow: hidden;
-  width: 240px;
+  width: 140px;
   display: inline-block; }
 
 .styled-select select {
   background: transparent;
-  width: 235px;
+  width: 100%;
   padding: 5px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1;
   border: 0;
   border-radius: 0;
   height: 50px;
   -webkit-appearance: none;
   border: 1px solid #404040; }
+
+.style-respon {
+  width: 32.3%; }
+
+ul.shopping-pro_detail {
+  list-style-type: none;
+  font-size: 18px;
+  padding-left: 0; }
+  ul.shopping-pro_detail > li > span {
+    font-weight: bold; }
+    ul.shopping-pro_detail > li > span.price {
+      font-size: 18px;
+      color: red; }
+
+.successorder > img.img-responsive {
+  margin: 0 auto; }
+
+ul.list-bank {
+  list-style-type: none; }
+  ul.list-bank > li {
+    font-size: 18px;
+    margin-bottom: 15px; }
+    ul.list-bank > li span {
+      display: inline-block;
+      width: 59px;
+      height: 59px;
+      margin-right: 30px; }
+      ul.list-bank > li span.bank1 {
+        background: url("../../images/bank.png") no-repeat 0 0; }
+      ul.list-bank > li span.bank2 {
+        background: url("../../images/bank.png") no-repeat 0 -75px; }
+      ul.list-bank > li span.bank3 {
+        background: url("../../images/bank.png") no-repeat 0 -150px; }
+      ul.list-bank > li span.bank4 {
+        background: url("../../images/bank.png") no-repeat 0 -225px; }
 
 /*
 * === Footer ===
@@ -575,7 +755,11 @@ footer {
     float: none; }
 
   .collapse.in {
-    display: block !important; } }
+    display: block !important; }
+
+  ul.shopping-pro_detail {
+    margin: 15px 0;
+    padding: 0; } }
 @media (max-width: 710px) {
   footer {
     text-align: center; }
@@ -586,7 +770,12 @@ footer {
 
   .dbrow {
     margin-right: -15px;
-    margin-left: -15px; } }
+    margin-left: -15px; }
+
+  .style-respon {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px; } }
 @media (max-width: 321px) {
   .caption.right-caption,
   .thumbnail.right-caption {
@@ -615,7 +804,12 @@ footer {
     margin-top: 15%; }
 
   .hovereffect a {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  ul.list-bank {
+    padding: 0; }
+    ul.list-bank td {
+      display: block; } }
 /*# sourceMappingURL=app.css.map */
 
 /*# sourceMappingURL=app.css.map */
