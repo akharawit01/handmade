@@ -19,10 +19,38 @@ include 'component/component.php';
 
     <div class="container product_detail">
         <div class="row">
-            <div class="col-md-8">
-                picture
+            <div class="col-md-7">
+                <ul id="vertical">
+                    <li data-thumb="images/about1.jpg">
+                        <img src="images/about1.jpg" width="100%" data-toggle="modal" data-target=".bs-example-modal-lg">
+                    </li>
+                    <li data-thumb="images/about1.jpg">
+                        <img src="images/about1.jpg" width="100%" data-toggle="modal" data-target=".bs-example-modal-lg">
+                    </li>
+                    <li data-thumb="images/about1.jpg">
+                        <img src="images/about1.jpg" width="100%" data-toggle="modal" data-target=".bs-example-modal-lg">
+                    </li>
+                    <li data-thumb="images/about1.jpg">
+                        <img src="images/about1.jpg" width="100%" data-toggle="modal" data-target=".bs-example-modal-lg">
+                    </li>
+                    <li data-thumb="images/about1.jpg">
+                        <img src="images/about1.jpg" width="100%" data-toggle="modal" data-target=".bs-example-modal-lg">
+                    </li>
+                    <li data-thumb="images/about1.jpg">
+                        <img src="images/about1.jpg" width="100%" data-toggle="modal" data-target=".bs-example-modal-lg">
+                    </li>
+                </ul>
+
+                <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <img src="images/about1.jpg" width="100%">
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <ul class="pro_detail">
                     <li>Product name: xxxxx</li>
                     <li>Price: <span class="price">$300</span></li>

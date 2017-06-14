@@ -21,11 +21,11 @@ include 'component/component.php';
         
         <ul id="progressbar">
             <li class="active">
-                <a href="#"><img src="images/icon-step_active.png" alt="" width="25"></a><br>
+                <a href="cart.php"><img src="images/icon-step_active.png" alt="" width="25"></a><br>
                 <strong>Account Setup</strong>
             </li>
             <li class="active">
-                <a href="#"><img src="images/icon-step_active.png" alt="" width="25"></a><br>
+                <a href="ordered.php"><img src="images/icon-step_active.png" alt="" width="25"></a><br>
                 <strong>Social Profiles</strong>
             </li>
             <li class="active">

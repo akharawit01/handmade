@@ -114,7 +114,7 @@ include 'component/component.php';
                         </tr>
                     </table>
 
-                    <div class="text-center"><button class="btn btn-default btn-handmade" type="submit">ยืนยัน</button></div>
+                    <div class="text-center"><a href="ordered.php"><button class="btn btn-default btn-handmade" type="submit">ยืนยัน</button></a></div>
                 </div>
             </div>
         </div>

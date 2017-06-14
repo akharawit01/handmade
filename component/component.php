@@ -9,6 +9,8 @@ function compo_stylesheets() {
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="assets/lightslider-master/dist/css/lightslider.min.css" rel="stylesheet">
     <link href="assets/css/app.css" rel="stylesheet">
 <?php
 }
@@ -17,7 +19,7 @@ function compo_header() {
 ?>
 	<header class="container">
         <div class="row">
-            <div class="col-lg-7 col-md-5"><a href="index.html"><img src="images/logo.png" class="img-responsive logo" alt="logo"></a></div>
+            <div class="col-lg-7 col-md-5"><a href="index.php"><img src="images/logo.png" class="img-responsive logo" alt="logo"></a></div>
             <div class="col-lg-5 col-md-7">
                 <form role="search">
                 <div class="input-group">
@@ -32,7 +34,7 @@ function compo_header() {
                         <button type="button" class="btn btn-default btn-block btn-login"><span class="glyphicon glyphicon-user"></span> เข้าสู่ระบบ or สมัครสมาชิก</button>
                     </li>
                     <li>
-                        <button type="button" class="btn btn-default btn-block btn-facebook">Log in with Facebook</button>
+                        <button type="button" class="btn btn-default btn-block btn-facebook"><img src="images/icon-facebook.png" alt=""> &nbsp; Log in with Facebook</button>
                     </li>
                     <li class="contact-head">
                         <div class="media">
@@ -78,8 +80,8 @@ function compo_header() {
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">New Arrival</a></li>
+                        <li class="active"><a href="index.php">Home</a></li>
+                        <li><a href="new_arrival.php">New Arrival</a></li>
                         <li><a href="#">Shoes</a></li>
                         <li><a href="#">Clothing</a></li>
                         <li><a href="#">Handbags</a></li>
@@ -97,7 +99,7 @@ function compo_header() {
 function compo_cart() {
 ?>
 	<div class="cart">
-        <a href="#">
+        <a href="cart.php">
             <img src="images/icon-cart.png" alt=""> <span>0 รายการ</span>
         </a>
     </div>
@@ -153,7 +155,11 @@ function compo_footer() {
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/moment/moment.js" type="text/javascript"></script>
+    <script src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+    <script src="assets/lightslider-master/dist/js/lightslider.min.js" type="text/javascript"></script>
     <script src="assets/js/app.js"></script>
 <?php
 }

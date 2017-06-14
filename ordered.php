@@ -21,7 +21,7 @@ include 'component/component.php';
         
         <ul id="progressbar">
             <li class="active">
-                <a href="#"><img src="images/icon-step_active.png" alt="" width="25"></a><br>
+                <a href="cart.php"><img src="images/icon-step_active.png" alt="" width="25"></a><br>
                 <strong>Account Setup</strong>
             </li>
             <li class="active">
@@ -40,7 +40,7 @@ include 'component/component.php';
                     <li class="box-border">
                         <h1>ที่อยู่ในการจัดส่ง</h1>
 
-                        <form>
+                        <form action="ordered01.php">
                             <div class="form-group">
                                 <label for="FirstnameLastname">ชื่อ-สกุลผู้รับ</label>
                                 <input type="text" class="form-control" id="FirstnameLastname">
@@ -110,9 +110,9 @@ include 'component/component.php';
                                 </div>
                             </div>
 
-                        </form>
+                            <div class="text-center"><button class="btn btn-default btn-handmade" type="submit">ยืนยัน</button></div>
 
-                        <div class="text-center"><button class="btn btn-default btn-handmade" type="submit">ยืนยัน</button></div>
+                        </form>
                     </li>
                 </ul>
             </div>

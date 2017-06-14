@@ -27,7 +27,7 @@ include 'component/component.php';
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="images/slide.jpg" alt="...">
+                    <img src="images/about1.jpg" alt="...">
                 </div>
             </div>
             <!-- Controls -->
@@ -50,15 +50,15 @@ include 'component/component.php';
 
         <div class="row">
             <div class="col-sm-9 col-xs-12">
-                <img src="images/slide.jpg" class="img-responsive" alt="...">
+                <img src="images/about2.jpg" class="img-responsive" alt="...">
                 <br class="hidden-lg hidden-md hidden-sm">
             </div>
             <div class="col-sm-3 col-xs-6">
-                <img src="images/slide.jpg" class="img-responsive" alt="...">
+                <img src="images/about3.jpg" class="img-responsive" alt="...">
                 <br class="hidden-xs">
             </div>
             <div class="col-sm-3 col-xs-6">
-                <img src="images/slide.jpg" class="img-responsive" alt="...">
+                <img src="images/about4.jpg" class="img-responsive" alt="...">
             </div>
         </div>
     </div>
