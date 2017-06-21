@@ -22,22 +22,22 @@ include 'component/component.php';
             <div class="col-md-7">
                 <ul id="vertical">
                     <li data-thumb="images/about1.jpg">
-                        <img src="images/about1.jpg" width="100%" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <img src="images/about1.jpg" data-toggle="modal" data-target=".bs-example-modal-lg">
                     </li>
                     <li data-thumb="images/about1.jpg">
-                        <img src="images/about1.jpg" width="100%" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <img src="images/about1.jpg" data-toggle="modal" data-target=".bs-example-modal-lg">
                     </li>
                     <li data-thumb="images/about1.jpg">
-                        <img src="images/about1.jpg" width="100%" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <img src="images/about1.jpg" data-toggle="modal" data-target=".bs-example-modal-lg">
                     </li>
                     <li data-thumb="images/about1.jpg">
-                        <img src="images/about1.jpg" width="100%" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <img src="images/about1.jpg" data-toggle="modal" data-target=".bs-example-modal-lg">
                     </li>
                     <li data-thumb="images/about1.jpg">
-                        <img src="images/about1.jpg" width="100%" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <img src="images/about1.jpg" data-toggle="modal" data-target=".bs-example-modal-lg">
                     </li>
                     <li data-thumb="images/about1.jpg">
-                        <img src="images/about1.jpg" width="100%" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <img src="images/about1.jpg" data-toggle="modal" data-target=".bs-example-modal-lg">
                     </li>
                 </ul>
 

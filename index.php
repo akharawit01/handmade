@@ -50,18 +50,29 @@ include 'component/component.php';
             <div class="col-md-12 col-sm-12">
                 <div class="col-md-6 col-sm-6 pd-none">
                     <div class="hovereffect">
-                        <img class="img-responsive" src="images/slide.jpg" alt="...">
-                        <div class="overlay">
-                            <h1 class="text-uppercase text-center">shoes</h1>
+                        <img class="img-responsive" src="images/h1.jpg" alt="...">
+                        <div class="overlay overlay1">
+                            <h1 class="text-uppercase text-center clrgrey">new arrival</h1>
                             <p class="text-center">
-                                <a href="#">Shop now >></a>
+                                <a href="#" class="shopnow1">Shop now</a>
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 pd-none">
                     <div class="hovereffect">
-                        <img class="img-responsive" src="images/slide.jpg" alt="...">
+                        <img class="img-responsive" src="images/h2.jpg" alt="...">
+                        <div class="overlay">
+                            <h1 class="text-uppercase text-center">&nbsp;</h1>
+                            <p class="text-center">
+                                <a href="#" class="shopnow2">Shop now</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 pd-none">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="images/h3.jpg" alt="...">
                         <div class="overlay">
                             <h1 class="text-uppercase text-center">shoes</h1>
                             <p class="text-center">
@@ -72,9 +83,9 @@ include 'component/component.php';
                 </div>
                 <div class="col-md-4 col-sm-6 pd-none">
                     <div class="hovereffect">
-                        <img class="img-responsive" src="images/slide.jpg" alt="...">
+                        <img class="img-responsive" src="images/h4.jpg" alt="...">
                         <div class="overlay">
-                            <h1 class="text-uppercase text-center">shoes</h1>
+                            <h1 class="text-uppercase text-center">clothing</h1>
                             <p class="text-center">
                                 <a href="#">Shop now >></a>
                             </p>
@@ -83,20 +94,9 @@ include 'component/component.php';
                 </div>
                 <div class="col-md-4 col-sm-6 pd-none">
                     <div class="hovereffect">
-                        <img class="img-responsive" src="images/slide.jpg" alt="...">
+                        <img class="img-responsive" src="images/h5.jpg" alt="...">
                         <div class="overlay">
-                            <h1 class="text-uppercase text-center">shoes</h1>
-                            <p class="text-center">
-                                <a href="#">Shop now >></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 pd-none">
-                    <div class="hovereffect">
-                        <img class="img-responsive" src="images/slide.jpg" alt="...">
-                        <div class="overlay">
-                            <h1 class="text-uppercase text-center">shoes</h1>
+                            <h1 class="text-uppercase text-center">handbags</h1>
                             <p class="text-center">
                                 <a href="#">Shop now >></a>
                             </p>

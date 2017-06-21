@@ -464,6 +464,11 @@ a.wp-review {
   left: 0;
   padding: 3em;
   text-align: left;
+  padding-top: 35%;
+}
+
+.hovereffect .overlay1 {
+    padding-top: 35%;
 }
 
 .hovereffect img {
@@ -507,8 +512,29 @@ a.wp-review {
     margin-bottom: 0;
     margin-top: 15%;
 }
+
+.hovereffect h1.clrgrey {
+    color: #b9c3cb;
+}
+
 .hovereffect a {
     font-size: 18px;
+}
+.hovereffect a.shopnow1 {
+    padding: 3px;
+    display: inline-block;
+    border-top: 3px solid #b9c3cb;
+    border-bottom: 3px solid #b9c3cb;
+    color: #b9c3cb;
+    font-weight: bold;
+}
+.hovereffect a.shopnow2 {
+    padding: 3px;
+    display: inline-block;
+    border-top: 3px solid #6b6b6b;
+    border-bottom: 3px solid #6b6b6b;
+    color: #6b6b6b;
+    font-weight: bold;
 }
 .hovereffect a, .hovereffect p, .hovereffect h1 {
   color: #FFF;
